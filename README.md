@@ -1,4 +1,6 @@
 # AngularCovidTracker
+This is my first time using Angular, so I am starting by following a tutorial https://www.udemy.com/course/angular-free-masterclass-part-one
+Personal additions are to be expected in the future.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.0.
 
