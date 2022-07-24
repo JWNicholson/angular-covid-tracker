@@ -1,15 +1,24 @@
-import { Component, OnInit } from '@angular/core';
+import {
+  Component,
+  Input,
+  OnChanges,
+  OnInit,
+} from '@angular/core';
 
 @Component({
   selector: 'app-summary-cards',
   templateUrl: './summary-cards.component.html',
-  styleUrls: ['./summary-cards.component.css']
+  styleUrls: ['./summary-cards.component.css'],
 })
-export class SummaryCardsComponent implements OnInit {
+export class SummaryCardsComponent implements OnInit, OnChanges {
+  @Input() covidData: any;
+  summaryData: any = {};
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void {
+  ngOnInit(): void {}
+
+  ngOnChanges(): void {
+    this.summaryData = this.covidData.Global;
   }
-
 }

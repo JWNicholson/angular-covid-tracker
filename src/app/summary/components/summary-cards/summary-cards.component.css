@@ -1,6 +1,9 @@
 .row {
   text-align: center;
   border: 0;
+}
+
+.card {
   box-shadow: 1px 5px 10px #d1d1d1;
 }
 
